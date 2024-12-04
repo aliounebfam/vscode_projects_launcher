@@ -152,7 +152,7 @@ Les contributions sont les bienvenues ! Voici comment participer :
 
 ## 📜 Licence
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails.
+Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE) pour plus de détails.
 
 ## ❤️ Support
 
