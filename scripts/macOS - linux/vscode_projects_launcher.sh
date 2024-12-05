@@ -1,28 +1,27 @@
 #!/bin/bash
-
-# Gestion intelligente du répertoire
+# Smart directory management
 if [ -z "$1" ] || [ "$1" = "." ]; then
     DIR="$PWD"
 else
     DIR="$1"
 fi
 
-# Vérification de l'existence du répertoire
+# Check if directory exists
 if [ ! -d "$DIR" ]; then
-    echo "Le répertoire \"$DIR\" n'existe pas."
+    echo "Directory \"$DIR\" does not exist."
     exit 1
 fi
 
-# Vérification de Visual Studio Code
+# Check if 'code' command is available
 if ! command -v code &> /dev/null; then
-    echo "Visual Studio Code n'est pas installé. Veuillez l'installer."
+    echo "Error: 'code' command not found. Make sure Visual Studio Code is installed and added to PATH."
     exit 1
 fi
 
-# Compteur de projets ouverts
+# Counter for opened projects
 OPENED_PROJECTS=0
 
-# Parcours de chaque sous-dossier et lancement de VSCode
+# Loop through each subfolder and launch VSCode
 for d in "$DIR"/*/; do
     if [ -d "$d" ] && [ -d "$d.git" ]; then
         code "$d" &
@@ -30,9 +29,9 @@ for d in "$DIR"/*/; do
     fi
 done
 
-# Message final personnalisé
+# Custom final message
 if [ $OPENED_PROJECTS -gt 0 ]; then
-    echo "Vos projets ont correctement été lancés avec VSCode."
+    echo "Your projects have been successfully opened with VSCode."
 else
-    echo "Aucun projet n'a été trouvé dans \"$DIR\"."
+    echo "No git projects found in \"$DIR\"."
 fi
