@@ -4,7 +4,7 @@
 
 ## 🎯 Le pourquoi ?
 
-Tout est parti d'un constat simple : quand je travaille sur des projets avec des architecture un peu complexes faisant intervenir plusieurs framework, lancer tout dans un seul VSCode peut vite devenir un cauchemar😬. 
+Tout est parti d'un constat simple : quand je travaille sur des projets avec des architectures un peu complexes faisant intervenir plusieurs frameworks, lancer tout dans un seul VSCode peut vite devenir un cauchemar 😬.
 
 Entre les différentes technologies, les contraintes d'architecture, et le besoin de garder une vue claire sur chaque partie, il m'est arrivé dès fois où je devais ouvrir au moins 3 instances VSCode différentes à chaque fois j'allumais mon PC...
 
