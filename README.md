@@ -1,3 +1,7 @@
+## 🌍 Languages
+- Français (Version actuelle)
+- [English version](README_EN.md)
+
 # 🤖 VSCode Projects Launcher
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -32,7 +36,7 @@ Récupérez le script correspondant à votre plateforme dans scripts, et personn
 
 ### Windows
 
-```batch
+```bash
 
 # Trois façons de l'utiliser :
 
@@ -146,7 +150,7 @@ Les contributions sont les bienvenues ! Voici comment participer :
 
 3. 💾 Committez vos changements (`git commit -m 'Add: Amazing Feature'`)
 
-4. 📤 Pushez votre branche sur le repo (`git push origin feature/AmazingFeature`)
+4. 📤 Pushez vers la branche (`git push origin feature/AmazingFeature`)
 
 5. 📫 Ouvrez une Pull Request
 
